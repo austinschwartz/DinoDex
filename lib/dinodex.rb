@@ -1,4 +1,4 @@
-require 'CSV'
+require 'csv'
 require_relative 'dinosaur'
 
 class DinoDex
