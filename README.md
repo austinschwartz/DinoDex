@@ -1,4 +1,5 @@
 ![Travis](https://travis-ci.org/nawns/DinoDex.svg)
+[![Coverage Status](https://coveralls.io/repos/nawns/DinoDex/badge.svg?branch=master&service=github)](https://coveralls.io/github/nawns/DinoDex?branch=master)
 
 Usage:
 
