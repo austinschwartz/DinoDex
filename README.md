@@ -1,4 +1,4 @@
-(https://travis-ci.org/nawns/DinoDex.svg)
+![Travis](https://travis-ci.org/nawns/DinoDex.svg)
 
 Usage:
 
@@ -8,9 +8,9 @@ Example queries:
 
 dinodex = DinoDex.new
 
-dinodex.query(Weight_in_lbs: DinoDex::BIG_SIZE).to_names
-dinodex.query(Weight_in_lbs: DinoDex::SMALL_SIZE).to_json
-dinodex.query(Diet: "Carnivore").query(Walking: "Quadruped").to_names
-dinodex.query(Walking: "Biped", Period: "Cretaceous").to_names
-dinodex.query(Weight_in_lbs: (525..2422)).to_json
-dinodex.query(Period: "Cretaceous").query(Diet: "Insectivore").facts
+* dinodex.query(Weight_in_lbs: DinoDex::BIG_SIZE).to_names
+* dinodex.query(Weight_in_lbs: DinoDex::SMALL_SIZE).to_json
+* dinodex.query(Diet: "Carnivore").query(Walking: "Quadruped").to_names
+* dinodex.query(Walking: "Biped", Period: "Cretaceous").to_names
+* dinodex.query(Weight_in_lbs: (525..2422)).to_json
+* dinodex.query(Period: "Cretaceous").query(Diet: "Insectivore").facts
