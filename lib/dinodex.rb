@@ -1,5 +1,5 @@
 require 'CSV'
-require_relative 'Dinosaur'
+require_relative 'dinosaur'
 
 class DinoDex
   attr_accessor :dinos, :csvs
@@ -7,7 +7,7 @@ class DinoDex
   SMALL_SIZE = (1..4000)
 
   def initialize(*files)
-    @files = ['../data/dinodex.csv', '../data/african_dinosaur_export.csv'] if files.empty?
+    @files = ['dinodex.csv', 'african_dinosaur_export.csv'] if files.empty?
     @files = files unless files.empty?
     @dinos = []
     @csvs = []
@@ -17,7 +17,7 @@ class DinoDex
 
   def initialize_csvs
     @files.each do |file|
-      @csvs << CSV.read(file, headers: true, header_converters: :symbol,
+      @csvs << CSV.read(Dir.pwd + '/data/' + file, headers: true, header_converters: :symbol,
                               converters: :all)
     end
   end
