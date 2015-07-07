@@ -7,7 +7,7 @@ class DinoDex
   SMALL_SIZE = (1..4000)
 
   def initialize(*files)
-    @files = ['dinodex.csv', 'african_dinosaur_export.csv'] if files.empty?
+    @files = ['../data/dinodex.csv', '../data/african_dinosaur_export.csv'] if files.empty?
     @files = files unless files.empty?
     @dinos = []
     @csvs = []

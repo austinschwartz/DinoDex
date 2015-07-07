@@ -1,9 +1,9 @@
 require "minitest/autorun"
-require './dinodex'
+require_relative '../lib/dinodex'
 
 class TestDinoDex < Minitest::Unit::TestCase
   def setup
-    @dinodex = DinoDex.new('dinodex.csv', 'african_dinosaur_export.csv')
+    @dinodex = DinoDex.new('../data/dinodex.csv', '../data/african_dinosaur_export.csv')
   end
 
   def test_carnivores
