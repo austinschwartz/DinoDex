@@ -1,3 +1,5 @@
+(https://travis-ci.org/nawns/DinoDex.svg)
+
 Usage:
 
 Make a DinoDex object and call query with a hash of your parameters. Hash key naming goes by the original csv names, and should be capitalized. You can chain any number of arbitrary queries, and use the clear method to clear the searches and get the original csvs back. You can also use a Range value for Weight_in_lbs, and I've predefined BIG_SIZE and SMALL_SIZE constants. I've also set up some tests as well.
